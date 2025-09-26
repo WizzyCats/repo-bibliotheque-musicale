@@ -1,4 +1,38 @@
-img {
-    vertical-align: middle;
-    border-style: none;
+body {
+font-family: Arial, Helvetica, sans-serif;
 }
+
+img {
+    display: inline-block;
+    border-radius: 50px;
+}
+
+.DisplayFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#steotw {
+    padding-left: 30px;
+}
+
+
+form.form-example {
+  display: table;
+}
+
+div.form-example {
+  display: table-row;
+}
+
+label,
+input {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+label {
+  padding-right: 10px;
+}
+
+/*style="float:right;*/
