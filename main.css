@@ -23,9 +23,8 @@ h2 {
 .main-nav {
     display: flexbox;
     justify-content: space-between;
-    align-items: center;
     background-color: #333;
-    padding: 0.5em 1em;
+    padding: 1em 1em;
     color: white;
 }
 
@@ -34,7 +33,7 @@ h2 {
     list-style: none;
     display: flex;
     gap: 1em;
-    margin: 0;
+    margin: 10px;
 }
 
 .nav-links a {
@@ -51,9 +50,5 @@ h2 {
     display: flex;
     justify-content: space-between;
 }
-
-/*#steotw {
-    padding-left: 30px;
-}*/
 
 
