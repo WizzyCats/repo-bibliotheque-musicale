@@ -1,3 +1,32 @@
+/* Css de la nav bar*/
+.main-nav {
+    display: flexbox;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 1em 1em;
+    color: white;
+}
+
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d40000;
+}
+
+/* CSS du formulaire */
+
 form.form-example {
   display: table;
 }
@@ -15,5 +44,3 @@ input {
 label {
   padding-right: 10px;
 }
-
-/*style="float:right;*/

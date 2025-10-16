@@ -11,10 +11,7 @@ font-family: Arial, Helvetica, sans-serif;
     height: 90%;
 }
 
-h2 {
-  text-align: center;
-}
-
+/* Css de la nav bar*/
 .main-nav {
     display: flexbox;
     justify-content: space-between;
@@ -24,7 +21,7 @@ h2 {
 }
 
 .nav-links {
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
     display: flex;
     gap: 1em;
@@ -39,11 +36,6 @@ h2 {
 
 .nav-links a:hover {
     color: #d40000;
-}
-
-.DisplayFlex {
-    display: flex;
-    justify-content: space-between;
 }
 
 

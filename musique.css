@@ -1,12 +1,52 @@
-img {
-    display: inline-block;
-    border-radius: 50px;
-    width: 400px;
-    height: 400px;
+/* Css de la nav bar */
+.main-nav {
+    display: flexbox;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 1em 1em;
+    color: white;
 }
 
-h2 {
-  text-align: center;
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d40000;
+}
+
+/* On rentre dans le body */
+
+.container {
+    margin: 0 auto;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+    min-height: auto;
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    animation: bounce 2s ease-in-out;
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+    color: rgb(192, 28, 28);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 .DisplayFlex {
@@ -72,7 +112,7 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr:hover {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(78, 205, 196, 0.1));
+    background: linear-gradient(135deg, rgb(51, 48, 48), rgb(239, 13, 13));
     transform: scale(1.01);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
@@ -147,4 +187,84 @@ td li:last-child {
 td li:hover {
     color: var(--primary-color);
     transform: translateX(5px);
+}
+
+/* responsive pour le tableau */
+@media (max-width: 1024px) {
+    table {
+        width: 98%;
+        margin: 20px auto;
+    }
+
+    th, td {
+        padding: 15px 10px;
+    }
+
+    td img {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        padding: 20px 15px;
+        font-size: 1.8rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        margin: 15px auto;
+    }
+
+    th, td {
+        padding: 12px 8px;
+        font-size: 0.9rem;
+    }
+
+    td img {
+        max-width: 80px;
+    }
+
+    .main-navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .main-navigation a {
+        width: 200px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    h1 {
+        padding: 15px 10px;
+        font-size: 1.5rem;
+    }
+
+    th, td {
+        padding: 10px 5px;
+        font-size: 0.8rem;
+    }
+
+    td img {
+        max-width: 60px;
+    }
+
+    td li {
+        font-size: 0.8rem;
+        padding: 5px 0;
+        padding-left: 15px;
+    }
 }
