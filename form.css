@@ -25,22 +25,53 @@
     color: #d40000;
 }
 
-/* CSS du formulaire */
-
-form.form-example {
-  display: table;
+form {
+  margin-top: 10%;
+  margin-left: 40%;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #f30404;
+  border-radius: 1em;
 }
 
-div.form-example {
-  display: table-row;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-label,
-input {
-  display: table-cell;
-  margin-bottom: 10px;
+form li + li {
+  margin-top: 1em;
 }
 
 label {
-  padding-right: 10px;
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+
+  width: 300px;
+  box-sizing: border-box;
+
+  border: 1px solid #ee0606;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #f50606;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+  resize: vertical;
+}
+
+.button {
+  padding-left: 40%;
+  padding-top: 5%;
 }
